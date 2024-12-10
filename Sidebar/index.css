@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("blue.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sidebar-toggle{
+    display: flex;
+    margin-left: 95vw;
+    padding: 10px;
+    margin-top: 20px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-white);
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    box-shadow: 0 0 8px grey;
+    transition: 0.7s;
+    transform: translate(-100%);
+}
+.show-sidebar{
+    transform: translate(0);
+}
+@media screen and (min-width: 676px) {
+    .sidebar{
+        width: 200px;
+    }    
+}
+.sidebar-header{
+    display: flex;
+}
+.sidebar-header img{
+    width: 8vw;
+    height: 8vw;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+.close-btn{
+    /* display: block; */
+    text-align: center;
+    padding: 6px 6px;
+    margin:0 0 6vw 8vh;
+}
+.links li{
+    list-style-type: none;
+    padding-bottom: 4px;
+}
+.links a{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-decoration: none;
+    /* padding: 14px; */
+}
+.links li:hover{
+    background-color:bisque;
+    cursor: pointer;
+}
+.links a:hover{
+    color:brown;
+    font-weight:800;
+    margin-left: 4px;
+}
+.social-links{
+    /* margin-left: 40vw; */
+    margin-top: 20vw;
+    text-align: center;
+    display: flex;
+    padding: auto;
+    list-style-type: none;
+}
+
+.social-links a{
+    padding: 10px;
+}
+/*  */
